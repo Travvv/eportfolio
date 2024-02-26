@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jacksonborth.xyz</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevents scrolling */
+            background-color: #141414;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #222222;
+            padding: 14px 16px;
+            position: relative;
+        }
+
+        .navbar .name {
+            color: #f2f2f2;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .navbar .links {
+            display: flex;
+        }
+
+        .navbar a {
+            color: #f2f2f2;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .navbar a:hover {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            height: calc(100% - 60px); /* Subtracting the height of navbar and footer */
+        }
+
+        .content img {
+            height: 80%;
+            width: auto;
+            padding: 20px;
+        }
+
+        .about-me {
+            flex-grow: 1;
+            padding: 20px;
+            overflow: auto; /* Allows scrolling in the about me section */
+            color: #f2f2f2;
+        }
+
+        .about-me p {
+            font-size: 20px;
+        }
+
+        .about-me h1 {
+            font-size: 40px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #222222;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">Jackson Borth</div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="IMG_3717.JPG" alt="Your Image">
+        <div class="about-me">
+            <h1>About Me</h1>
+            <p>
+                I am a student at the University of Alabama studying Computer Science. I am passionate about technology and enjoy learning new things. I have experience with web development, mobile development, and game development. I am always looking for new opportunities to learn and grow.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by Jackson Borth.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
