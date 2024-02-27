@@ -1,9 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>404</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevents scrolling */
+            background-color: #141414;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* This will create space between your items */
+            align-items: center; /* Vertically center the items */
+            background-color: #222222;
+            padding: 14px 16px;
+            position: relative;
+        }
+
+        .navbar .name {
+            color: #f2f2f2;
+            font-size: 26px;
+            font-weight: bold;
+            position: absolute; /* This will take the name out of the document flow */
+            left: 50%; /* This will move the name to the center of the navbar */
+            transform: translateX(-50%); /* This will perfectly center the name */
+        }
+    
+        .navbar .links {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 10px; /* This will keep your links 10px from the right side of the page */
+        }
+
+        .navbar a {
+            color: #f2f2f2;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            height: calc(100% - 60px); /* Subtracting the height of navbar and footer */
+        }
+
+        .content img {
+            height: 80%;
+            width: auto;
+            padding: 40px;
+        }
+
+        .about-me {
+            flex-grow: 1;
+            padding: 20px 100px;
+            overflow: auto; /* Allows scrolling in the about me section */
+            color: #f2f2f2;
+        }
+
+        .about-me p {
+            font-size: 24px;
+        }
+
+        .about-me h1 {
+            font-size: 40px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #222222;
+            color: white;
+            text-align: center;
+        }
+
+        .mobile-warning {
+            display: none;
+            text-align: center;
+            padding: 10px;
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        @media screen and (max-width: 768px) {
+            .mobile-warning {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Page not published.</h1>
+    <div class="navbar">
+        <div class="name">Jackson Borth</div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="https://github.com/Travvv">Projects</a>
+            <a href="resume.pdf">Resume</a>
+        </div>
+    </div>
+    <div class="mobile-warning">
+        <p style="color: white">This website is best viewed on a computer.</p>
+    </div>
+
+    <div class="content">
+        <img src="IMG_3717.JPG" alt="Picture">
+        <div class="about-me">
+            <h1>About Me</h1>
+            <p style="text-indent: 25px;">
+                Hi! My name is Jackson. I am a student at the University of Alabama studying Computer Science. I'm from Poplar Grove, Illinois and graduated from Belvidere North High School where I ran track as a hurdler. 
+                I am passionate about technology and enjoy learning new things, and I am currently searching for a summer internship for 2024.</p> 
+            <p style="text-indent: 25px;">
+                My story with technology began when I was very young and my Dad introduced me to one of the old Microsoft Flight Simulator games. I was hooked, and flying around and even crashing into things was simply the most fun thing to me. 
+                For a long time, I wanted to be a pilot, but as I grew older, I realized that I was more interested in the technology that made the flight simulator work. I started to learn about computers and programming, and I've been on that track ever since.
+            </p>
+            <p style="text-indent: 25px;">
+                I am a National Rural and Small Town Scholar which has thankfully enabled me to attend the University of Alabama. I am planning to be an RA for the upcoming school year and am excited to be a part of the community.
+                I'm a former karting champion and semi-professional racing driver, and I plan to involve myself with Alabama's Formula SAE team. I am always looking for ways to get involved on campus and in the community. Feel free to contact me regarding this!
+
+            </p>
+            <p style="text-indent: 25px;">
+                My career goals are to work in the technology industry, and I am particularly interested in software development and cybersecurity. I am always looking for new opportunities to learn and grow, and I am excited to see where my career takes me.
+                In addition to this, I have a slight preference in the aviation or automotive industry, but I am adaptable and open to new experiences. With this in mind, I've made several contributions over the years on GitHub projects (my own and others) 
+                since as early as 2017. You can view my contributions by clicking the "Projects" button on the top left of this page (though some are private). I am always looking for new projects to work on and new people to meet, so feel free to reach out to me!
+            </p>
+            <p style="text-indent: 25px;">
+                My skills include C, C++, HTML, CSS, JavaScript, Lua, and more. I am also familiar with Git, GitHub, and Linux. I can type 100wpm and am familiar with the Microsoft Office Suite. I am also familiar with the Adobe Suite
+                 and have experience with Photoshop, Premiere Pro, and After Effects. I've made websites like this one professionally and for fun, and have even developed JavaScript based chatbots (see GitHub).
+            </p>
+            <p style="text-indent: 25px;">
+                If you have any questions or interest, please feel free to email me! My contact information can be found at the bottom of this page. Thank you for visiting my website!
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Created by Jackson Borth.</h3>
+        <div class="contact-details">
+            <p>jrborth@crimson.ua.edu | Phone: +1 (815) 721-0830</p>
+        </div>
+    </div>
 </body>
 </html>
