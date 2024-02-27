@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jacksonborth.xyz</title>
+    <title>Home</title>
     <style>
         body, html {
             height: 100%;
@@ -14,7 +14,8 @@
 
         .navbar {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; /* This will create space between your items */
+            align-items: center; /* Vertically center the items */
             background-color: #222222;
             padding: 14px 16px;
             position: relative;
@@ -22,20 +23,24 @@
 
         .navbar .name {
             color: #f2f2f2;
-            font-size: 20px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+            font-size: 26px;
+            font-weight: bold;
+            position: absolute; /* This will take the name out of the document flow */
+            left: 50%; /* This will move the name to the center of the navbar */
+            transform: translateX(-50%); /* This will perfectly center the name */
         }
-        
+    
         .navbar .links {
             display: flex;
+            justify-content: flex-end;
+            margin-right: 10px; /* This will keep your links 10px from the right side of the page */
         }
 
         .navbar a {
             color: #f2f2f2;
             text-decoration: none;
             margin-left: 10px;
+            font-size: 18px;
         }
 
         .navbar a:hover {
@@ -101,7 +106,10 @@
     </div>
 
     <div class="footer">
-        <p>Created by Jackson Borth.</p>
+        <h3>Created by Jackson Borth.</h3>
+        <div class="contact-details">
+            <p>jrborth@crimson.ua.edu | Phone: +1 (815) 721-0830</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
